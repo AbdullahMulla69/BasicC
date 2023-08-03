@@ -1,6 +1,4 @@
-
-
-//to check wheteher no. is odd or even
+//to check whether no. is odd or even
 #include<stdio.h>
 main()
 {
