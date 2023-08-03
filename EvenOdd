@@ -1,1 +1,19 @@
 
+
+//to check wheteher no. is odd or even
+#include<stdio.h>
+main()
+{
+    int a;
+    printf("Enter number ");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+       printf("Even"); 
+    }
+    else
+    {
+    printf("Odd");
+    }
+    
+}
