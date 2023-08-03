@@ -8,5 +8,5 @@ main()
     scanf("%d",&b);
     c=a+b;
     m=a*b;
-    printf("sum is %d and multiplication is %d", c,m);
+    printf("Sum is %d and Multiplication is %d", c,m);
 }
