@@ -5,6 +5,7 @@ main()
     int a;
     printf("Enter number ");
     scanf("%d",&a);
+    printf("Given number is ");
     if(a%2==0)
     {
        printf("Even"); 
@@ -13,5 +14,4 @@ main()
     {
     printf("Odd");
     }
-    
 }
