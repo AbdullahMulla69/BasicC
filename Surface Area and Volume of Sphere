@@ -1,0 +1,19 @@
+ //Surface Area and Volume of Sphere
+#include <stdio.h>
+
+main()
+{
+    const int pi=3.14;
+    int r,  Area,  Volume;
+  
+    printf("Enter radius of sphere in mm ="     );
+    scanf(  "%d"  ,&r       );
+    
+    Area= 4 * pi * r * r ;
+    Volume = (4/3)* pi * r * r *r ;
+    
+    printf("Area of sphere is %d Sqmm",Area     );
+    printf("\n");
+    printf("Volume  of sphere is %d Sqmm",Volume     );
+   
+}
