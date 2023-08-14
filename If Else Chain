@@ -2,8 +2,8 @@
  main() 
 {
  int age;
-  printf("-----Welcome for voting----- \n");
-  printf("****************** \n");
+ printf("-----Welcome for voting----- \n");
+ printf("****************** \n");
  printf("Enter your age= ");
  scanf ( "%d" , &age);
  if (age >= 18)
