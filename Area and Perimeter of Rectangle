@@ -1,0 +1,13 @@
+#include <stdio.h>
+main()
+{
+    float area,peri,l,b;
+    printf("Enter Length= ");
+    scanf("%f",&l);
+    printf("Enter Width= ");
+    scanf("%f",&b);
+    area=l*b;
+    peri=(l+b)*2;
+    printf("Area is %0.2f and Perimeter is %0.2f", area,peri);
+    
+}
