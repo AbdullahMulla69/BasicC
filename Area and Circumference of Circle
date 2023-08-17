@@ -1,0 +1,12 @@
+#include <stdio.h>
+main()
+{
+    float area,cir,π,r;
+    π= 3.14;
+    printf("Enter radius= ");
+    scanf("%f",&r);
+    area=π*r*r;
+    cir=2*π*r;
+    printf("Area is %0.2f and Circumference is %0.2f", area,cir);
+    
+}
