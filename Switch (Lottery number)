@@ -2,7 +2,7 @@
 main()
 {
    int a;
-   printf("Enter Ticket number= ");
+   printf("Enter your Ticket number: ");
    scanf("%d",&a);
    switch (a)
    {
