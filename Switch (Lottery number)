@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+   int a;
+   printf("Enter Ticket number= ");
+   scanf("%d",&a);
+   switch (a)
+   {
+       case 364:
+       case 696:
+       case 212:
+       printf("You have WON the lottery!\n");
+       break;
+       default: printf("Better luck next time.\n");
+   }
+   printf("Thank You for participating.");
+}
