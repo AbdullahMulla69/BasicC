@@ -8,15 +8,15 @@ main()
     {
         if (a>0)
         {
-            printf("Number is Positive");
+            printf("Number is Greater");
         }
         else
         {
-            printf("Number is Negative");
+            printf("Number is Smaller");
         }
     }
     else
     {
-        printf("Number is Zero");
+        printf("Number is Equal");
     }
 }
