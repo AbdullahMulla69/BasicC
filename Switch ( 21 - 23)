@@ -1,0 +1,18 @@
+#include <stdio.h>
+main()
+{
+    int num;
+    printf("Enter a number between 21 to 23= ");
+    scanf("%d", &num);
+    switch (num)
+    {
+    case 21: printf("Given number is Valid");
+    break;
+    case 22: printf("Given number is Valid");
+    break;
+    case 23: printf("Given number is Valid");
+    break;
+    
+    default: printf("Given number is Unvalid");
+    }
+}
