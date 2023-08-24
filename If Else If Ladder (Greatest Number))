@@ -8,15 +8,12 @@ main()
     {
         printf("a is the Greatest number");
     }
-    else 
-    {
-        if (b>c)
-      {
+    else if (b>c)
+        {
         printf("b is the Greatest number");
-      }
-      else
-      {
+        }
+         else
+        {
         printf("c is the Greatest number");
-      }
-    }
+        }
 }
