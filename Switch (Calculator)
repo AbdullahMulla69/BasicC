@@ -1,0 +1,20 @@
+#include <stdio.h>
+main()
+{
+    int a,b,option;
+    printf("Enter First : ");
+    scanf("%d",&a);
+    printf("Enter Second number: ");
+    scanf("%d",&b);
+    printf("Select option:\n1:Addition\n2:Subtract\n3:Divide\n4:Multiplication\n");
+    printf("Enter option=");
+    scanf("%d",&option);
+    switch (option)
+    {
+         case 1: printf("Addition is %d", a+b); break;
+         case 2: printf("Subtraction is %d", a-b);break;
+         case 3: printf("Divide is %d",a/b);break;
+         case 4: printf("Multiplication is %d",a*b);break;
+         default : printf("Invalid value.");
+    }
+}
