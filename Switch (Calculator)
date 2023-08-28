@@ -6,7 +6,7 @@ main()
     scanf("%d",&a);
     printf("Enter Second number: ");
     scanf("%d",&b);
-    printf("Select option:\n1:Addition\n2:Subtract\n3:Divide\n4:Multiplication\n");
+    printf("Select option:\n1:Addition\n2:Subtraction\n3:Division\n4:Multiplication\n");
     printf("Enter option=");
     scanf("%d",&option);
     switch (option)
