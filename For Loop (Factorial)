@@ -1,0 +1,17 @@
+//C program to find factorial of any number
+#include<stdio.h>
+main()
+{
+    int i,n;
+    int fact=1;
+    //input and store
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    //for loop
+    for (i=1;i<=n;++i)
+    {
+       fact = fact * i;
+    }
+    //output
+    printf("Factorial is %d ",fact);
+}
