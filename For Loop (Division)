@@ -1,0 +1,19 @@
+//C program to divide
+#include<stdio.h>
+main()
+{
+    int i,n,r,q;
+    int sum=0;
+    //input and store
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    //for loop
+    for (i=1;n!=0;i++)
+    {
+       q=n/10;
+       r=n%10;
+       n=q;
+       sum = sum + r;
+    }
+    printf("%d",sum);
+}
