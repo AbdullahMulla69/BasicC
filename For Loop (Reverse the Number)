@@ -8,7 +8,7 @@ main()
     for(i=1;n>0;i++)
     {
         rim=n%10;
-        rev=rev*10+rim;
+        rev=(rev*10)+rim;
         q=n/10;
         n=q;
     }
