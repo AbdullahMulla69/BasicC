@@ -1,0 +1,26 @@
+//Palindrome number
+#include <stdio.h>
+main()
+{
+   printf("********Palindrome number********\n");
+   int i,n,q,rim,rev=0,pre;
+   printf("Enter number: ");
+   scanf("%d",&n);
+   pre=n;
+   for(i=1;n>0;i++)
+    {
+        rim=n%10;
+        rev=(rev*10)+rim;
+        q=n/10;
+        n=q;
+    }
+    if(pre==rev)
+    {
+            printf("Entered number is Palindrome number.");
+    }
+    else 
+    {
+        printf("Entered number is NOT Palindrome number.");
+    }
+       
+}
