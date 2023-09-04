@@ -1,0 +1,16 @@
+#include <stdio.h>
+main()
+{
+    int i,n,q,rim,rev;
+    printf("Enter number: ");
+    scanf("%d",&n);
+    
+    for(i=1;n>0;i++)
+    {
+        rim=n%10;
+        rev=rev*10+rim;
+        q=n/10;
+        n=q;
+    }
+    printf("Entered number in reverse is: %d",rev);
+}
