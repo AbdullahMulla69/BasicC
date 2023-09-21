@@ -1,0 +1,15 @@
+#include<stdio.h>
+main()
+{
+    int a[5]={10,5,69,42,28};
+    int large=a[0];
+    int i;
+    for(i=1;i<=4;i++)
+    {
+        if(a[i]>large)
+        {
+            large=a[i];
+        }
+    }
+    printf("Largest no. is: %d",large);
+}
