@@ -1,0 +1,72 @@
+#include<stdio.h>
+#include<string.h>
+ void calci(int a, int b, int option)
+{
+    int c;
+    void add()
+    {
+    printf("Addition is %d\n",c=a+b);
+    }
+    void sub()
+    {
+        printf("Subtraction is %d\n",c=a-b);
+    }
+    void divi()
+    {
+        printf("Division is %d\n",c=a/b);
+    }
+    void multi()
+    {
+        printf("Multiplication is %d\n",c=a*b);
+    }
+    void def()
+    {
+         printf("Please enter correct option number!\n");
+    }
+    switch (option)
+    {
+         case 1: add(); break;
+         case 2: sub(); break;
+         case 3: divi(); break;
+         case 4: multi(); break;
+         default : def();
+    }
+    
+}
+void eod(int o)
+    {
+        if(o%2==0)
+        {
+            printf("Answer received is Even"); 
+        }
+        else
+        {
+            printf("Answer received is Odd");
+        }
+    }
+void main()
+{
+    int a,b,o,option;
+    printf("Enter First number: ");
+    scanf("%d",&a);
+    printf("Enter Second number: ");
+    scanf("%d",&b);
+    printf("Select option:\n1:Addition\n2:Subtraction\n3:Division\n4:Multiplication\n");
+    printf("Enter option: ");
+    scanf("%d",&option);
+    calci(a,b,option);
+    printf("Do you want to find whether the answer is Even or Odd?\n1.Yes 2.No\n");
+    scanf("%d",&o);
+    if(o==1)
+        {
+            eod(o);
+        }
+        else if(o==2)
+        {
+            printf("***End***");
+        }
+        else
+        {
+            printf("Invalid option selected");
+        }
+}
