@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+struct college
+{
+    int cid;
+    char cname[30];
+}c;
+struct student
+{
+    int roll;
+    char sname[20];
+    struct college c;
+}s1;
+main()
+{
+    printf("Enter college id and name: ");
+    scanf("%d %s", &s1.c.cid,s1.c.cname);
+    printf("Enter Student roll no. and name: ");
+    scanf("%d %s",&s1.roll,s1.sname);
+    printf("\nCollege Details:\n");
+    printf("College name: %s\nCollege ID: %d\n",s1.c.cname,s1.c.cid);
+    printf("\nStudent Details:");
+    printf("\nStudent Name: %s\nStudent Roll No.: %d",s1.sname,s1.roll);
+}
