@@ -1,0 +1,30 @@
+#include<stdio.h>
+void add(float a,float b)
+{
+    printf("Addition is: %0.2f", a+b);
+}
+void sub(float a, float b)
+{
+    printf("\nSubtraction is: %0.2f", a-b);
+}
+void divi(float a, float b)
+{
+    printf("\nDivision is: %0.2f", a/b);
+}
+void mul(float a, float b)
+{
+     printf("\nMuliplication is: %0.2f", a*b);
+}
+
+main()
+{
+   float a,b;
+   printf("Enter first value: ");
+   scanf("%f",&a);
+   printf("Enter second value: ");
+   scanf("%f",&b);
+   add(a,b);
+   sub(a,b);
+   divi(a,b);
+   mul(a,b);
+}
