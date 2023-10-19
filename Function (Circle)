@@ -1,0 +1,19 @@
+#include<stdio.h>
+void cir (float r)
+{
+    float a,d,c;
+    d=2*r;
+    c=2*3.14*r;
+    a=3.14*r*r;
+    printf("Diameter is: %0.2f",d);
+    printf("\nCircumference is: %0.2f",c);
+    printf("\nArea is: %0.2f",a);
+}
+main()
+{
+    float r;
+    printf("Enter radius: ");
+    scanf("%f",&r);
+    cir(r);
+    
+}
