@@ -1,0 +1,16 @@
+//Function Pointer
+#include<stdio.h>
+int add (int a, int b)
+    {
+        return a+b;
+    }
+void main()
+    {
+    int a,b;
+    printf("Enter 2 numbers: ");
+    scanf("%d %d",&a, &b);
+    int (*fnt)(int , int );
+    fnt = &add;
+    int f= (*fnt)( a,  b);
+    printf("Add is: %d",f);
+    }
