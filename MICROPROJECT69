@@ -1,0 +1,52 @@
+#include<stdio.h>
+//call by value
+void value(int a, int b)
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+    printf("\nAfter swapping by value: a= %d and b= %d",a,b);
+}
+//call by reference
+void ref(int *a, int *b)
+{
+    int l;
+    l=*a;
+    *a=*b;
+    *b=l;
+    printf("\nAfter swapping by reference: a= %d and b= %d",*a,*b);
+}
+void main()
+{   
+    int a,b;
+    printf("Enter First number: ");
+    scanf("%d",&a);
+    printf("\nEnter Second number: ");
+    scanf("%d",&b);
+    printf("\nBefore swapping in main: a= %d and b= %d",a,b);
+    value(a,b);
+    ref(&a,&b);
+    //addition
+    int p,q;
+    printf("\nEnter First number: ");
+    scanf("%d",&p);
+    printf("\nEnter Second number: ");
+    scanf("%d",&q);
+    int revsult=vadd(p,q);
+    int refsult=radd(&p,&q);
+    printf("\nResult of addition by passing value: %d",revsult);
+    printf("\nResult of addition by passing address: %d",refsult);
+}
+//add by passing value
+int vadd(int p, int q)
+{
+    int c;
+    return c=p+q;
+}
+//add by passing address
+int radd(int *p, int *q)
+{
+    int c;
+    return c=(*p)+(*q);
+}
